@@ -600,9 +600,9 @@ textarea {
 .nav__menu > .active > a {
     text-shadow: 0 0 .65px #333B69, 0 0 .65px #333B69;
 }
-@media only screen and (min-width: 992px) {
   .nav__wrap {
-    display: block !important;
+    padding-left: 44px;
+    display: block ;
     height: auto !important;
   }
   .nav__menu > li {
@@ -695,7 +695,41 @@ textarea {
   .nav__dropdown-trigger {
     display: none;
   }
-}
+
+
+  @media only screen and (max-width: 990px) {
+    .nav__wrap.nav__pc {
+      display: none;
+    }
+    .nav__mobil {
+      display: flex;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    .nav__mobil ul > li > a {
+      padding: 0 5px;
+    }
+  }
+
+  @media only screen and (min-width: 990px) {
+    .nav__mobil {
+      display: none;
+    }
+  }
+  
+
+  @media only screen and (max-width: 1100px) {
+    .nav__wrap {
+      padding-left: 0;
+    }
+
+    .nav__pc > li > a {
+      padding: 0 2px;
+    }
+  }
+
+  
 
 
 
@@ -795,7 +829,7 @@ textarea {
   }
   @media only screen and (max-width: 767px) {
     .footer__widgets .row > div:not(:last-child) {
-      margin-bottom: 60px;
+      margin-bottom: 0;
     }
   }
   
@@ -948,3 +982,38 @@ textarea {
     }
 
 
+
+
+
+
+
+
+    .nav__icon-toggle {
+      position: relative;
+      padding: 9px 0 9px 10px;
+      background-color: transparent;
+      border: none;
+      z-index: 50;
+    }
+    @media only screen and (min-width: 992px) {
+      .nav__icon-toggle {
+        display: none;
+      }
+    }
+    .nav__icon-toggle-bar {
+      background-color: #333B69;
+      width: 18px;
+      display: block;
+      height: 2px;
+      border-radius: 1px;
+      margin-bottom: 4px;
+    }
+    .nav__icon-toggle-bar:last-child {
+      margin-bottom: 0;
+    }
+    .nav__icon-toggle:focus .nav__icon-toggle-bar, .nav__icon-toggle:hover .nav__icon-toggle-bar {
+      box-shadow: 0 0 1px #333B69;
+    }
+    .nav__icon-toggle:focus {
+      outline: none;
+    }
