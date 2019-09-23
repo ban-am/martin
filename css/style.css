@@ -724,8 +724,8 @@ textarea {
       padding-left: 0;
     }
 
-    .nav__pc > li > a {
-      padding: 0 2px;
+    .nav__pc ul > li > a {
+      padding: 0 10px;
     }
   }
 
