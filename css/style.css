@@ -600,11 +600,11 @@ textarea {
 .nav__menu > .active > a {
     text-shadow: 0 0 .65px #333B69, 0 0 .65px #333B69;
 }
-  .nav__wrap {
-    padding-left: 44px;
-    display: block ;
+@media only screen and (min-width: 992px) {
+.nav__wrap {
+    display: block !important;
     height: auto !important;
-  }
+}
   .nav__menu > li {
     display: inline-block;
     text-align: center;
@@ -695,7 +695,33 @@ textarea {
   .nav__dropdown-trigger {
     display: none;
   }
+}
 
+  .flex-child {
+    flex: 1 0 0;
+}
+ul > li {
+  list-style: none;
+}
+@media only screen and (max-width: 991px){
+  header .flex-parent {
+      display: block;
+  }
+  .nav__header {
+    height: 110px;
+    display: flex;
+  }
+  .nav__menu {
+    display: block;
+}
+.nav__menu li a {
+  padding: 0;
+  line-height: 46px;
+  height: 46px;
+  display: block;
+  border-bottom: 1px solid #E8ECED;
+}
+}
 
   @media only screen and (max-width: 990px) {
     .nav__wrap.nav__pc {
@@ -729,6 +755,11 @@ textarea {
     }
   }
 
+  @media only screen and (max-width: 991px) {
+    .nav__btn {
+      width: 100%;
+    }
+}
   
 
 
@@ -872,100 +903,16 @@ textarea {
     margin-top: 24px;
   }
 
-
-  .social {
-    display: inline-block;
-    line-height: 40px;
-    width: 40px;
-    height: 40px;
-    border-radius: 5px;
-    color: #fff !important;
-    text-align: center;
-    margin-right: 6px;
-    margin-bottom: 6px;
-    font-size: 15px;
-    -webkit-transition: all 0.1s ease-in-out;
-    -moz-transition: all 0.1s ease-in-out;
-    -ms-transition: all 0.1s ease-in-out;
-    -o-transition: all 0.1s ease-in-out;
-    transition: all 0.1s ease-in-out;
-  }
-  .social:hover, .social:focus {
-    color: #fff;
-  }
-  .social:last-child {
-    margin-right: 0;
-  }
-  .social-facebook {
-    background-color: #39599f;
-  }
-  .social-facebook:hover {
-    background-color: #324e8c;
-  }
-  .social-twitter {
-    background-color: #55ACEE;
-  }
-  .social-twitter:hover {
-    background-color: #3ea1ec !important;
-    color: #fff !important;
-  }
-  .social-google-plus {
-    background-color: #DE4B39;
-  }
-  .social-google-plus:hover {
-    background-color: #d93824 !important;
-    color: #fff !important;
-  }
-  .social-youtube {
-    background-color: #c61d23;
-  }
-  .social-youtube:hover {
-    background-color: #b01a1f !important;
-    color: #fff !important;
-  }
-  .social-snapchat {
-    background-color: #fffb01;
-  }
-  .social-snapchat:hover {
-    background-color: #e7e300 !important;
-    color: #fff !important;
-  }
-  .social-linkedin {
-    background-color: #0e76a8;
-  }
-  .social-linkedin:hover {
-    background-color: #0c6590 !important;
-    color: #fff !important;
-  }
-  .social-pinterest {
-    background-color: #c8232c;
-  }
-  .social-pinterest:hover {
-    background-color: #b21f27 !important;
-    color: #fff !important;
-  }
-  .social-instagram {
-    background-color: #e1306c;
-  }
-  .social-instagram:hover {
-    background-color: #d81f5e !important;
-    color: #fff !important;
-  }
-  .social-rss {
-    background-color: #ef822a;
-  }
-  .social-rss:hover {
-    background-color: #ed7412 !important;
-    color: #fff !important;
-  }
-
     @media (min-width: 1400px) {
         .container {
             max-width: 1320px;
         }
     }
 
-    
+    .languages ul {
+      padding: 0 17px;
+    }
+
     .languages li {
         font-size: 11px;
     }
@@ -981,19 +928,33 @@ textarea {
         text-decoration: none;
     }
 
+    @media only screen and (max-width: 991px) {
+      .languages li a {
+        text-align: center;
+    }
+    }
 
+    /* .image__bg{
+      background: 
+      linear-gradient( 
+        rgba(255, 255, 255, 0.45),
+        rgb(251, 251, 251) ), 
+        url(img/welder_cut.jpg) center center fixed;
 
-
+    } */
+    
 
 
  
 
     .nav__icon-toggle {
       position: relative;
-      padding: 9px 0 9px 10px;
       background-color: transparent;
       border: none;
       z-index: 50;
+      align-self: flex-end!important;
+      margin-bottom: 20px;
+  
     }
     @media only screen and (min-width: 992px) {
       .nav__icon-toggle {
@@ -1002,7 +963,7 @@ textarea {
     }
     .nav__icon-toggle-bar {
       background-color: #333B69;
-      width: 18px;
+      width: 30px;
       display: block;
       height: 2px;
       border-radius: 1px;

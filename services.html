@@ -13,20 +13,26 @@
 </head>
 
 <body>
-    <header class="color_nav nav">
-            <div class="nav__holder nav--sticky">
+        <header class="color_nav nav">
+                <div class="nav__holder nav--sticky">
                     <div class="container nav__container">
                         <div class="flex-parent">
         
                             <div class="nav__header">
                                 <!-- Logo -->
-                                <a href="#" class="navbar-brand site-logo">
+                                <a href="#" class="navbar-brand site-logo flex-child">
                                     <img src="img/logo.png" width="45" alt="" class="d-inline-block align-middle mr-2">
                                 </a>
+                                <button type="button" class="nav__icon-toggle" id="nav__icon-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="nav__icon-toggle-bar"></span>
+                                    <span class="nav__icon-toggle-bar"></span>
+                                    <span class="nav__icon-toggle-bar"></span>
+                                  </button> 
                             </div>
         
                             <!-- Navbar -->
-                            <nav  class="nav__wrap nav__pc align-self-end">
+                            <nav id="navbar-collapse" class="nav__wrap collapse navbar-collapse align-self-end">
                                 <ul class="nav__menu">
                                     <li class="active">
                                         <a href="index.html">Home</a>
@@ -40,10 +46,8 @@
                                     <li class="nav__dropdown">
                                         <a href="contact.html">Contact</a>
                                     </li>
-                                    <li class="nav__dropdown">
-                                        <a href="#">Languages</a>
-                                        <i class="ui-arrow-down nav__dropdown-trigger"></i>
-                                        <ul class="nav__dropdown-menu">
+                                    <li class="languages">
+                                        <ul>
                                           <li><a href="#"><svg width="23" height="12"><defs>
                                               <linearGradient id="German" x1="0" x2="0" y1="0" y2="1"
                                                   gradientUnits="objectBoundingBox">
@@ -56,9 +60,9 @@
                                               </linearGradient>
                                           </defs>
                                           <rect id="GermanFlag" fill="url(#German)" width="23" height="12" />
-                                      </svg> Deutch</a></li>
+                                      </svg></a></li>
                                           <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 30"
-                                            width="23" height="15">
+                                            width="23" height="12">
                                             <clipPath id="s">
                                                 <path d="M0,0 v30 h60 v-30 z" />
                                             </clipPath>
@@ -73,7 +77,7 @@
                                                 <path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10" />
                                                 <path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6" />
                                             </g>
-                                        </svg> England</a></li>
+                                        </svg></a></li>
                                         </ul>
                                       </li>
                                 </ul> <!-- end menu -->
@@ -87,64 +91,8 @@
                             </div>
         
                         </div> <!-- end flex-parent -->
-        
-                        <div class="container nav__container">
-                            <!-- Navbar -->
-                            <nav  class="nav__wrap nav__mobil justify-content-center ">
-                                    <ul class="nav__menu">
-                                        <li class="active">
-                                            <a href="index.html">Home</a>
-                                        </li>
-                                        <li class="nav__dropdown">
-                                            <a href="services.html">Services</a>
-                                        </li>
-                                        <li class="nav__dropdown">
-                                            <a href="references.html">References</a>
-                                        </li>
-                                        <li class="nav__dropdown">
-                                            <a href="contact.html">Contact</a>
-                                        </li>
-                                        <li class="nav__dropdown">
-                                            <a href="#">Languages</a>
-                                            <i class="ui-arrow-down nav__dropdown-trigger"></i>
-                                            <ul class="nav__dropdown-menu">
-                                              <li><a href="#"><svg width="23" height="12"><defs>
-                                                  <linearGradient id="German" x1="0" x2="0" y1="0" y2="1"
-                                                      gradientUnits="objectBoundingBox">
-                                                      <stop offset="0" stop-color="#000" />
-                                                      <stop offset="0.3333" stop-color="#000" />
-                                                      <stop offset="0.3333" stop-color="#D00" />
-                                                      <stop offset="0.6667" stop-color="#D00" />
-                                                      <stop offset="0.6667" stop-color="#FFCE00" />
-                                                      <stop offset="1.00" stop-color="#FFCE00" />
-                                                  </linearGradient>
-                                              </defs>
-                                              <rect id="GermanFlag" fill="url(#German)" width="23" height="12" />
-                                          </svg> Deutch</a></li>
-                                              <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 30"
-                                                width="23" height="15">
-                                                <clipPath id="s">
-                                                    <path d="M0,0 v30 h60 v-30 z" />
-                                                </clipPath>
-                                                <clipPath id="t">
-                                                    <path d="M30,15 h30 v15 z v15 h-30 z h-30 v-15 z v-15 h30 z" />
-                                                </clipPath>
-                                                <g clip-path="url(#s)">
-                                                    <path d="M0,0 v30 h60 v-30 z" fill="#012169" />
-                                                    <path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6" />
-                                                    <path d="M0,0 L60,30 M60,0 L0,30" clip-path="url(#t)"
-                                                        stroke="#C8102E" stroke-width="4" />
-                                                    <path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10" />
-                                                    <path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6" />
-                                                </g>
-                                            </svg> England</a></li>
-                                            </ul>
-                                          </li>
-                                    </ul> <!-- end menu -->
-                                </nav> <!-- end nav-wrap -->
-                            </div>
-                    </div> <!-- end container -->
-    </header> <!-- end navigation -->
+                </div>
+            </header> <!-- end navigation -->
 
 
     <section class="page-title text-center">
